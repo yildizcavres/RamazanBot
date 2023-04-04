@@ -40,7 +40,7 @@ async def iftar(bot, message):
     try:
         tmp = unidecode(message.text).upper().split()
         if len(tmp) < 2:
-            await message.reply_text("Hatalı Kullanım!\nDoğru Kullanım: `/iftar İstanbul Avcılar`")
+            await message.reply_text("Hatalı Kullanım!\nDoğru Kullanım: `/iftar Ankara Mamak`")
             return
         if len(tmp) == 2:
             il = tmp[1]
@@ -64,7 +64,7 @@ async def iftar(bot, message):
                 h = int(kalan / 3600)  # kalan saat
                 m = int((kalan % 3600) / 60)  # kalan dakika
                 _kalan = f'{h} saat, {m} dakika'
-                mesaj = f'{ilce} için **{ezan_saat}** saatine kadar aç kalmalısın 🤤...\n**{_kalan}** daha dayanmalısın...'
+                mesaj = f'{ilce} için **{ezan_saat}** saatinde okunuyor ezan 😯...\n**{_kalan}** Allah kabul etsin...'
                 await message.reply_text(mesaj)
             else:
                 await message.reply_text("İstediğin Yerde Ezanın Kaçta Okunduğunu Bilmiyorum :/") 
