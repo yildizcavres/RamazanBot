@@ -64,7 +64,7 @@ async def iftar(bot, message):
                 h = int(kalan / 3600)  # kalan saat
                 m = int((kalan % 3600) / 60)  # kalan dakika
                 _kalan = f'{h} saat, {m} dakika'
-                mesaj = f'{ilce} için **{ezan_saat}** saatinde okunuyor ezan 😯...\n**{_kalan}** Allah kabul etsin...'
+                mesaj = f'{ilce} için **{ezan_saat}** saati iftar vakti 😯...\n**{_kalan}** kaldı...'
                 await message.reply_text(mesaj)
             else:
                 await message.reply_text("İstediğin Yerde Ezanın Kaçta Okunduğunu Bilmiyorum :/") 
