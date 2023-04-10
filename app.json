@@ -1,5 +1,5 @@
 {
-    "name": "IftarSahurBot",
+    "name": "okyanusezan",
     "description": "iftar ve sahur vakitleri için basit telegram botu",
     "keywords": [
         "telegram",
@@ -8,7 +8,7 @@
         "ramazan",
         "ezan"
     ],
-    "repository": "https://github.com/ali-mmagneto/RamazanBot",
+    "repository": "https://github.com/yildizcavres/RamazanBot",
     "env": {
         "BOT_TOKEN": {
             "description": "@BotFather'dan alın",
